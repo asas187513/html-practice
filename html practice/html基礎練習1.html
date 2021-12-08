@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <!-- 辨識為HTML的版本 -->
+<html lang="zh-TW">
+    <!-- 語言設定為台灣語言 但VS CODE好像不用 -->
+
+
+<head>
+    <!-- 這裡大多設定這個網頁的呈現方式 -->
+<title>這是練習</title>
+    <!-- 標題 -->
+<meta charset="utf-8">
+    <!-- 編碼版本 -->
+<meta name="description" content="練習內容">
+    <!-- 搜尋時的標題描述 -->
+<meta name="keyword" content="有關練習內容的關鍵字">
+    <!-- 搜尋時的標題下的關鍵字 -->
+<meta name="author" content="練習內容下的作者">
+    <!-- 搜尋時的標題下的作者 -->
+    <!-- Style為要使用CSS格式時常用的標籤但若寫在HEAD裡面要設標籤.place區隔不然會顯示在整個網頁頁面 -->
+<style>
+    .place{
+        background: lightblue;
+    }
+    #content{
+        max-width: 800px;
+    }
+    image{
+        border-radius: 10px;
+    }
+    p{
+        margin: 0px;
+    }
+    a{
+        text-decoration: none;
+    }
+    div{
+        width: 500px;
+        padding: 10px;
+        border: 5px red solid;
+        margin: 30px;
+    }
+</style>
+</head>
+
+
+<body>
+    <!-- 為網頁呈現的內容 -->
+<p>
+這個是沒有使用DIV排版前
+這個是沒有使用DIV排版前
+這個是沒有使用DIV排版前
+這個是沒有使用DIV排版前
+這個是沒有使用DIV排版前
+</p>
+<div id="1">
+    <!-- 若需排版在此區塊的內容會照所CODE內的排版方式進行 -->
+<p>
+這個是使用DIV排版過後
+這個是使用DIV排版過後
+這個是使用DIV排版過後
+這個是使用DIV排版過後
+這個是使用DIV排版過後
+</p>
+</div>
+<article>
+<p>
+若使用article標籤代表此段內容再這個網頁是獨立出來的一段內容
+</p>
+<h1>例子 此為標題最大的字體大小 - H1</h1>
+<ul>
+    <li>一個報紙內的獨立新聞</li>
+    <li>留言區的一條留言</li>
+</ul>
+<p>
+使用上與section沒有太大差異目前覺得是開發上用來區別內容重要性的一個標籤
+</p>
+</article>
+<section style="margin-top: 50px;">
+<p>
+若使用section代表為此段內容只是網頁的一部份功能不必特別獨立出來
+</p>
+<h5>例子 此為標體字體第5大的大小 - H5</h5>
+<ul>
+    <li>網站簡介</li>
+    <li>網站功能</li>
+</ul>
+<p>
+使用上在此區塊的內容重要性次於article區塊的內容大概只有開發較嚴謹的時候才會去使用兩者做出差別
+</p>
+</section>
+<div>
+<h2>這個區塊要做行內元素的練習</h2>
+<p>這裡是<strong>strong</strong>字體變粗的標籤練習</p>
+<h3>這邊是照片img src標籤的練習</h3>
+<img src="img/1.jpg" height="200px">
+<h3>這裡是跳到網站內關鍵字的超連結標籤 A 的練習</h3>
+<p>
+<a href="#1">這連結會跳到 DIV 1</a>
+</p>
+<h3>這裡是跳到網站內網頁的超連結標籤 A 的練習</h3>
+<p>
+<a href="html基礎練習1.html">這連結就是該練習資料夾下是該名稱的網頁連結</a>
+</p>
+<h3>這裡是跳到網站外網頁的超連結標籤 A 的練習</h3>
+<p>
+<a href="https://www.youtube.com/">這連結就是直接輸入想去的網頁的網址連結</a>
+</p>
+</div>
+<div style="width: 250px;padding: 10px;border: 5px red solid;margin: 30px;">
+<p>
+這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  
+這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)
+這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)
+這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)
+這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)  這裡要練習在BODY裡設定CSS格式(´･ω･`)
+</p>
+</div>
+<div class="place">
+<p>
+這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)
+這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)
+這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)
+這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)
+這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)  這裡要練習在head裡設定.place的CSS格式(´･ω･`)
+</p>
+</div>
+<div id="content">
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  這裡要練習在head裡設定id="content"的CSS格式(´･ω･`)  
+</div>
+</body>
+</html>

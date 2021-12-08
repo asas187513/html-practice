@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圖文交錯切版</title>
+    <style type="text/css">
+        @import url("https//fonts.googleapis.com/css?family=Note+Sans+TC:100,300,400,500,700,900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+        body{
+            padding: 100px 0;
+            background: linear-gradient(10deg,#FB8076,#FEB85D) fixed center center/100% 100%;
+        }
+        .wrap{
+            width: 800px;
+            margin:auto;
+        }
+        .item{
+            display:flex;
+            align-items: center;
+            margin-bottom: 70px;
+            font-family:'Noto Sans TC',sans-serif;
+        }
+        .item .txt h2{font-weight: 900;}
+        .item .txt p{font-weight: 600; margin-top:10px ;}
+        .item.pic{
+            width: 55%;
+            flex-shrink: 0;
+        }
+        .item .txt{
+            width: 65%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+        .item.pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item>:first-child{
+            margin-right: -3%;
+        }
+        .item:nth-child(1) .txt{
+            background-color: rgba(254,201,11, .8);
+        }
+        .item:nth-child(2) .txt{
+            background-color: rgba(180,174,193, .8);
+        }
+        .item:nth-child(3) .txt{
+            background-color: rgba(100,150,100, .8);
+        }
+        .item:nth-child(4) .txt{
+            background-color: rgba(200,124,163, .8);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src ="圖片/皮卡丘.jpg" width="400" height="380">
+            </div>
+            <div class="txt">
+                <h2>皮卡丘</h2>
+                <p>越是能製造出強大電流的皮卡丘，臉頰上的囊就越柔軟，同時也越有伸展性。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <h2>依布</h2>
+                <p>伊布擁有著能夠為了適應周遭的環境而改變身體構造的能力。</p>
+            </div>
+            <div class="pic">
+                <img src ="圖片/依布.jpg" width="400" height="380">
+            </div>
+        </div> 
+        <div class="item">
+            <div class="pic">
+                <img src ="圖片/謎擬Q.jpg" width="400" height="380">
+            </div>
+            <div class="txt">
+                <h2>謎擬Q</h2>
+                <p>為了讓別人不要害怕自己，特意穿上了看似皮卡丘的破布，結果卻變得更加令人毛骨悚然。</p>
+            </div>
+        </div> 
+        <div class="item">
+            <div class="txt">
+                <h2>胖丁</h2>
+                <p>在百貨公司的寢具區可以買到收錄著胖丁那奇妙搖籃曲的ＣＤ。</p>
+            </div>
+            <div class="pic">
+                <img src ="圖片/胖丁.jpg" width="400" height="380">
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
