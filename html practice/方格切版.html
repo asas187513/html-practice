@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>頁尾切版練習</title>
+    <style type="text/css">
+        @import url("https//fonts.googleapis.com/css?family=Note+Sans+TC:100,300,400,500,700,900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family:'Noto Sans TC',sans-serif;
+        }
+        body{
+            background-color:wheat;
+        }
+        .wrap{
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .item{
+            float: left;
+            position: relative;
+        }
+        .item img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item:first-child{
+            width: 50%;
+        }
+        .item:first-child ~ .item{
+            width: 25%;
+        }
+        .item .txt{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0,.6);
+            display: flex;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: scale(0);
+            transition: .5s;
+        }
+        .item:hover .txt{
+            transform: scale(1);
+            opacity: 1;
+        }
+        .item p{
+            font-weight: 100;
+            line-height: 1.7;
+        }
+        .item h3{
+            margin-bottom: .4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="圖片/巨金怪.png">
+            <div class="txt">
+                <h3>巨金怪</h3>
+                <p>除了精神力量，也以怪力為傲。會用４隻腳捕捉獵物，再用鋼鐵爪子封鎖對方的行動。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="圖片/天蠍王.png">
+            <div class="txt">
+                <h3>天蠍王</h3>
+                <p>用尾巴倒掛在樹枝上觀察獵物。會看準時機從上空偷襲。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="圖片/瑪力露麗.png">
+            <div class="txt">
+                <h3>瑪力露麗</h3>
+                <p>長長的耳朵是瑪力露麗重要的感應器。只要注意聽，即使是在湍急的河流中也能分辨出獵物的種類。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="圖片/沼王.png">
+            <div class="txt">
+                <h3>沼王</h3>
+                <p>就算腦袋撞上船底或河裡的岩石，也完全不會去在意，悠然自在地游泳的悠閒寶可夢。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="圖片/呆呆獸.png">
+            <div class="txt">
+                <h3>呆呆獸</h3>
+                <p>傳說當呆呆獸打呵欠時就會開始下雨，所以據說有些地區會祭祀呆呆獸。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

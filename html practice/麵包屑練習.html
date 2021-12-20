@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麵包屑</title>
+    <style type="text/css">
+        @import url("https//fonts.googleapis.com/css?family=Note+Sans+TC:100,300,400,500,700,900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family:'Noto Sans TC',sans-serif;
+        }
+        body{
+            background-color: darkorchid;
+        }
+        .wrap{
+            padding: 10px 0;
+            background: darksalmon;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, .6);
+        }
+        .bread{
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+        .bread li{
+            padding: 0 20px;
+        }
+        .bread a:hover{
+            color: #ff0;
+        }
+        .bread a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .bread li+li{
+            padding-left:0 ;
+        }
+        .bread li+li::before{
+            content: '>';
+            color: #fff;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ol class="bread">
+            <li><a href="#">網站介紹</a></li>
+            <li><a href="#">版本介紹</a></li>
+            <li><a href="#">圖鑑查詢</a></li>
+            <li><a href="#">訂閱機制</a></li>
+        </ol>
+    </div>
+</body>
+</html>
