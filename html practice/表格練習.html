@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>變形切版</title>
+    <style type="text/css">
+        @import url("https//fonts.googleapis.com/css?family=Note+Sans+TC:100,300,400,500,700,900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family:'Noto Sans TC',sans-serif;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(90deg,#3d5894,#08c7a5);
+        }
+        .table{
+            width: 800px;
+            margin: auto;
+        }
+        .table table{
+            width: 100%;
+            border:  3px double #666;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .table thead{
+            background-color: #333;
+            color: #fff;
+        }
+        .table thead th:first-child{
+            border-radius: 7px 0 0 0;
+        }
+        .table thead th:last-child{
+            border-radius: 0 7px 0 0;
+        }
+        .table tbody a{
+            color: #777;
+        }
+        .table tbody tr:hover{
+            background-color: #FEE;
+        }
+        .table tbody tr:nth-child(even){
+            background-color: #ffa;
+        }
+        .table tfoot td:first-child{
+            border-radius: 0 0 0 7px;
+        }
+        .table tfoot td:last-child{
+            border-radius: 0 0 7px 0;
+        }
+        .table th{
+            border: 1px solid #666;
+            padding: 6px 10px;
+            font-family: 'Noto Sans TC',sans-serif;
+        }
+        .table td{
+            border: 1px solid #666;
+            padding: 6px 10px;
+            font-family: 'Noto Sans TC',sans-serif;
+        }
+        .table caption{
+            caption-side: bottom;
+            text-align: right;
+            padding: 10px 0;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <caption>
+                寶可夢圖鑑 資料一覽表
+            </caption>
+            <thead>
+            <tr>
+                <th scope="col">寶可夢</th>
+                <th scope="col">名字</th>
+                <th scope="col">屬性</th>
+                <th scope="col">弱點</th>
+                <th scope="col">分類</th>
+                <th scope="col">特性</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="圖片/妙蛙花.png" width="150" height="150"></td>
+                <td><a href="#">妙蛙花</a></td>
+                <td>草、毒</td>
+                <td>火、冰、飛行、超能力</td>
+                <td>種子寶可夢</td>
+                <td>茂盛</td>
+            </tr>
+            <tr>
+                <td><img src="圖片/噴火龍.png.crdownload" width="150" height="150"></td>
+                <td><a href="#">噴火龍</a></td>
+                <td>火、飛行</td>
+                <td>水、電、岩石</td>
+                <td>火焰寶可夢</td>
+                <td>猛火</td>
+            </tr>
+            <tr>
+                <td><img src="圖片/水箭龜.png" width="150" height="150"></td>
+                <td><a href="#">水箭龜</a></td>
+                <td>水</td>
+                <td>草、電</td>
+                <td>甲殼寶可夢</td>
+                <td>激流</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>備註</td>
+                    <td colspan="5">以上切版方式從金魚系列影片練習而來 資料來源為寶可夢圖鑑</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
