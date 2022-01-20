@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>對話框</title>
+    <link rel="stylesheet" href="C:\Users\serserser\Desktop\練習\font-awesome-4.7.0\css\font-awesome.min.css">
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d3effb;
+        }
+        .talk{
+            width: 500px;
+            padding: 20px;
+            box-shadow: 0 0 10px #3e92cc;
+            background-color: #f4f5f7;
+        }
+        .user{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .local{
+            justify-content: flex-end;
+        }
+        .user .avatar{
+            width: 60px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .user .pic{
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .user .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .user .txt{
+            background-color: #aaa;
+            padding: 16px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .remote .txt{
+            margin-left: 20px;
+            margin-right: 80px;
+            color: #a1b4c5;
+            background-color: #fff;
+        }
+        .local .txt{
+            margin-right: 20px;
+            margin-left: 80px;
+            order: -1;
+            background-color: #3e92cc;
+            color: #FFF;
+        }
+        .remote .txt::before,
+        .local .txt::before{
+            content: '';
+            position: absolute;
+            top:15px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .remote .txt::before{
+            border-right: 10px solid #fff;
+            left: -10px;
+        }
+        .local .txt::before{
+            border-left: 10px solid #3e92cc;
+            right: -10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="talk">
+        <div class="user remote">
+            <div class="avatar">
+                <div class="pic">
+                    <img src="圖片/卡比獸.jpg">
+                </div>
+                <div class="name">卡比獸</div>
+            </div>
+            <div class="txt">
+                聽說有些神奇寶貝很好吃
+            </div>
+        </div>
+        <div class="user local">
+            <div class="avatar">
+                <div class="pic">
+                    <img src="圖片/大蔥鴨.png">
+                </div>
+                <div class="name">大蔥鴨</div>
+            </div>
+            <div class="txt">
+                論好吃程度我可能是名列前茅的種類
+           </div>
+        </div>
+        <div class="user remote">
+            <div class="avatar">
+                <div class="pic">
+                    <img src="圖片/卡比獸.jpg">
+                </div>
+                <div class="name">卡比獸</div>
+            </div>
+            <div class="txt">
+                肚子開始餓了
+            </div>
+        </div>
+        <div class="user local">
+            <div class="avatar">
+                <div class="pic">
+                    <img src="圖片/大蔥鴨.png">
+                </div>
+                <div class="name">大蔥鴨</div>
+            </div>
+            <div class="txt">
+                其實我媽是百變怪
+           </div>
+        </div>
+    </div>
+</body>
+</html>
