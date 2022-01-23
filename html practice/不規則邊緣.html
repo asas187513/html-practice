@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不規則邊緣</title>
+    <link rel="stylesheet" href="C:\Users\serserser\Desktop\練習\font-awesome-4.7.0\css\font-awesome.min.css">
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .banner{
+            height: 700px;
+            background: url('圖片/寶可夢背景圖.jpg') center center / cover;
+        }
+        .sec{
+            position: relative;
+        }
+        .sec .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .sec .item{
+            width: 570px;
+            margin: 0 15px;
+        }
+        .sec .item h2{
+            margin-bottom: 1.3em;
+        }
+        .sec .item p{
+            line-height: 1.7;
+            margin-bottom: 1.6em;
+        }
+        .sec::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #FFF;
+            top:0;
+            left: 50%;
+            transform: translateX(-30%) translateY(-50%);
+            border-radius: 50%;
+            box-shadow: 178px 0px 0px 30px #FFF,
+            327px 34px 0px 20px #FFF,
+            480px 9px 0px 60px #FFF,
+            690px 71px 0px 60px #FFF,
+            880px 0px 0px 89px #FFF,
+
+            -178px 0px 0px 30px #FFF,
+           -327px 34px 0px 20px #FFF,
+            -480px 9px 0px 60px #FFF,
+            -690px 71px 0px 60px #FFF,
+            -880px 0px 0px 89px #FFF,
+            -1100px 50px 0 89px #FFF,  
+
+            100px 0px 0 56px rgba(0,0,10,.5),
+            298px 10px 0 56px rgba(0,0,10,.5),
+            540px -40px 0 50px rgba(0,0,10,.5),
+            740px -30px 0 30px rgba(0,0,10,.5),
+            880px -100px 0 80px rgba(0,0,10,.5),
+            1000px 0px 0 80px rgba(0,0,10,.5),
+
+            -60px 0px 0 56px rgba(0,0,10,.5),
+            -298px 10px 0 56px rgba(0,0,10,.5),
+            -540px -40px 0 50px rgba(0,0,10,.5),
+            -740px -30px 0 30px rgba(0,0,10,.5),
+            -780px -70px 0 80px rgba(0,0,10,.5),
+            -1200px 0px 0 80px rgba(0,0,10,.5);
+        }
+        .sec::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            z-index: 1;
+            top:0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="sec">
+        <div class="container">
+            <div class="item">
+                <h2>寶可夢介紹</h2>
+                <p>寶可夢（日語：ポケットモンスター、ポケモン，英語：Pokémon、Pocket Monsters，舊譯「神奇寶貝」，「寵物小精靈」等），是一個跨媒體製作的作品系列，包括遊戲、動畫、漫畫、卡片遊戲及相關產品；系列最初起源於GAME FREAK代表田尻智提出的原案，於1995年開始宣傳，1996年由任天堂於Game Boy平台發行首款遊戲《寶可夢 紅·綠》。
+                    因其獨特的遊戲系統廣受大眾的歡迎，初代遊戲在日本銷量即破800萬（紅、綠二版本合計）。任天堂趁此熱潮，推出後續的一系列遊戲、漫畫、書籍、對戰卡片及週邊產品，還聯合日本東京電視台推出電視動畫，及往後一年一度的劇場版動畫電影，更在1998年成功進軍美國，後拓展至世界各地。除了少數地區因宗教等因素受阻，系列作品已成功進入全世界183國家，成為世界聞名的卡通和日本動畫形象。相關產品銷售額達數百億美元以上。因為各項業務的成長，1998年成立了獨立的寶可夢公司（當時名為寶可夢中心公司，於2000年改為現名）專營，該公司為任天堂持股的子公司之一。
+                    寶可夢即是寶可夢世界中的所有虛構生物的總稱。截至2021年9月，全系列的寶可夢共有901種。</p>
+            </div>
+            <div class="item">
+                <h2>概要</h2>
+                <p>該系列最早是在Game Boy遊戲《寶可夢 紅·綠》打下的基礎，這款作品在1996年2月27日發售。遊戲開發公司為GAME FREAK，社長田尻智也是負責概念開發設計的總監。這部醞釀了6年的產品剛開始只售出12萬套，遊戲中為了達成讓朋友之間互相交換所捕捉物種的樂趣，相當少見地在當時一次推出兩個版本，這種行為一度還被批評圈錢，但幾個月後隨著週刊相關漫畫推出，在小學生之間經口耳相傳而變得非常受矚目，尤其後來人們發現一些卡帶存在BUG，其實這是因為遊戲被當時的程式員森本茂樹將代碼最佳化刪除後，利用僅存的一點記憶體私下寫入了自己設計的寶可夢——夢幻，這項神祕的151號寶可夢的彩蛋，使有些玩家只能透過連機交換來得到，最終讓兩套作品都賣得非常好，這種發行方式也成為了遊戲的傳統。之後本作品的續編也相繼發售。除本作品之外，衍生作品和相關作品也大量發售，包括電影、周邊商品等。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
