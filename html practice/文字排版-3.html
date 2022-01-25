@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字排版</title>
+    <link rel="stylesheet" href="C:\Users\serserser\Desktop\練習\font-awesome-4.7.0\css\font-awesome.min.css">
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+        
+       *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        .container h1{
+            width: 400px;
+            box-sizing: border-box;
+            padding: 15px;
+            background-color: #eee;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .txt{
+            column-count: 2;
+            column-gap: 460px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+        .container p:first-child::first-letter{
+            font-size: 40px;
+            float: left;
+            padding-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>寶可夢傳說 阿爾宙斯</h1>
+            <div class="txt">
+                <p>在很久很久以前，那是尚未有寶可夢訓練家等概念的過去時代的故事，這個地方最終將成為《寶可夢 鑽石／珍珠（ポケットモンスター ダイヤモンド・パール）》的舞台，被稱作「神奧地區」。
+                    <br>主角冒險的目的，是要製作出「這個地區的第一本寶可夢圖鑑」。
+                    在還未清楚寶可夢們生態的洗翠地區，主角將成為以祝慶村為據點的「銀河隊」其中一員，對寶可夢的生態展開調查。
+                </p>
+                <p>本作的最大特徵，是系列中最高自由度的場地探索。主角要一邊在廣大的自然場地奔跑，一邊調查在洗翠地區生活的寶可夢。
+                    此外，透過騎乘寶可夢，不僅可以在大地馳騁，也可以在水上和天空上移動，甚至能將行動範圍擴展到水上和空中，更自在地在洗翠地區冒險。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
